@@ -4,7 +4,7 @@ const urlsToCache = [
   "index.html",
   "offline.html",
   "./static/css/main.d2702b9a.css",
-  "./static/js/main.31d7e0d2.js",
+  "./static/js/main.5204d775.js",
   "https://kit.fontawesome.com/565d41f5d4.js",
   "https://fonts.gstatic.com/s/nunito/v22/XRXI3I6Li01BKofiOc5wtlZ2di8HDDshdTQ3jw.woff2",
   "https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap",
@@ -33,12 +33,12 @@ self.addEventListener("fetch", (event) => {
       .catch(() => {
         if (
           caches.match("index.html") &&
-          caches.match("./static/js/main.31d7e0d2.js")
+          caches.match("./static/js/main.5204d775.js")
         ) {
           return caches
-            .match("./static/js/main.31d7e0d2.js")
+            .match("./static/js/main.5204d775.js")
             .then(() => caches.match("./static/css/main.d2702b9a.css"))
-            .then(()=> caches.match("./static/js/main.31d7e0d2.js"))
+            .then(()=> caches.match("./static/js/main.5204d775.js"))
             .then(() => caches.match("index.html"));
         }
       })
