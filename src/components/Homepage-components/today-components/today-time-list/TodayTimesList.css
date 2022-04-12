@@ -1,0 +1,121 @@
+.closeHadith {
+  background: none;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  height: 25px;
+  outline: inherit;
+  position: relative;
+  left: 145px;
+  top: 35px;
+  width: 25px;
+  font-size: 20px;
+  color: white;
+}
+
+.hadith-container {
+  position: fixed;
+  width: 353px;
+  text-align: center;
+  margin: auto;
+  right: 0;
+  left: 0;
+  top: 12%;
+  border-radius: 11px;
+  padding: 6px 0px 0px 0px;
+  height: 403px;
+}
+
+.hadith-container .hadith-container-current {
+  background-color: #aa75ff;
+  padding: 8.1px;
+  border-radius: 8px;
+  height: 100%;
+  overflow: auto;
+  text-align: left;
+  padding: 36px 36px 36px 8px;
+}
+
+.hadith-container .hadith-container-current .hadith-container-current-title {
+  color: white;
+}
+
+.TodayTimesList__ul-times-list {
+  width: 90%;
+  color: white;
+  margin: 5% auto auto auto;
+  padding: 0;
+}
+
+.TodayTimesList__ul-times-list .TodayTimesList__ul-times-list__li {
+  -webkit-box-shadow: 1px 2px 4px 0px #00000042;
+          box-shadow: 1px 2px 4px 0px #00000042;
+  font-weight: bold;
+  color: #aa75ff4f;
+  width: 100%;
+  background-color: #eaeaea;
+  list-style: none;
+  height: 60px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 13px;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.TodayTimesList__ul-times-list .TodayTimesList__ul-times-list__li .TodayTimesList__ul-times-list__li__span--information {
+  padding-left: 84%;
+  position: absolute;
+}
+
+.TodayTimesList__ul-times-list .TodayTimesList__ul-times-list__li .TodayTimesList__ul-times-list__li__span--information .info-icons {
+  cursor: pointer;
+}
+
+@media (min-width: 622px) {
+  .TodayTimesList__ul-times-list {
+    width: 90%;
+    color: white;
+    margin: 5% 5% 5% 5%;
+    padding: 0;
+  }
+  .TodayTimesList__ul-times-list .TodayTimesList__ul-times-list__li {
+    font-weight: bold;
+    color: #aa75ff4f;
+    width: 100%;
+    background-color: #eaeaea;
+    list-style: none;
+    height: 60px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    font-size: 13px;
+  }
+  .TodayTimesList__ul-times-list .TodayTimesList__ul-times-list__li .TodayTimesList__ul-times-list__li__span--information {
+    margin-left: -48%;
+    position: absolute;
+  }
+  .TodayTimesList__ul-times-list .TodayTimesList__ul-times-list__li .TodayTimesList__ul-times-list__li__span--information .info-icons {
+    cursor: pointer;
+  }
+}
+/*# sourceMappingURL=TodayTimesList.css.map */

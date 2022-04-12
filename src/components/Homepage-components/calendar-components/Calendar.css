@@ -1,0 +1,245 @@
+.closeInfosMonth {
+  color: #eaeaea;
+  background: none;
+  cursor: pointer;
+  border: none;
+  height: 25px;
+  outline: inherit;
+  width: 25px;
+  text-align: center;
+  font-size: 20px;
+  display: block;
+}
+
+.infos-hijri-month-container {
+  color: #eaeaea;
+  background-color: #aa75ff;
+  padding: 8.1px;
+  border-radius: 8px;
+  overflow: auto;
+  text-align: center;
+  width: 260px;
+  margin: 125px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-shadow: 20px 20px 45px #d9d9d9, -20px -20px 45px #ffffff;
+          box-shadow: 20px 20px 45px #d9d9d9, -20px -20px 45px #ffffff;
+  margin-top: 200px;
+  position: fixed;
+  right: 0;
+  left: 0;
+}
+
+.infos-hijri-month-container p {
+  padding-top: 25px;
+  padding-left: 7%;
+}
+
+.calendar .Calendar__div-container-span-select {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 1em;
+}
+
+.calendar .calendar-container-month-degreeSeclect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.calendar .calendar-container-month-degreeSeclect .calendar-title-month {
+  text-align: center;
+  color: #aa75ff;
+}
+
+.calendar .calendar-container-month-degreeSeclect select {
+  margin-top: 20px;
+  color: #aa75ff;
+  outline: 0;
+  border: 0;
+  background-color: white;
+  cursor: pointer;
+  width: 45%;
+  height: 30px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 2px 5px 0px #00000042;
+          box-shadow: 0px 2px 5px 0px #00000042;
+}
+
+.calendar .calendar-container-month-degreeSeclect .select {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  border-radius: 0.25em;
+  overflow: hidden;
+}
+
+.calendar .calendar-span-infos-month {
+  cursor: pointer;
+}
+
+.calendar .calendar-span-infos-month .info-icons-calendar {
+  font-size: 20px;
+}
+
+@media (min-width: 0px) and (max-width: 800px) {
+  .name-of-times-list {
+    display: none;
+  }
+  .closeTimesOfDates {
+    color: white;
+    background: none;
+    border: none;
+    border-radius: 80%;
+    cursor: pointer;
+    font: inherit;
+    height: 25px;
+    outline: inherit;
+    position: fixed;
+    right: 15%;
+    top: 13%;
+    width: 25px;
+    font-size: 20px;
+  }
+  .containerCurrentTimesClicked-today {
+    background: #aa75ff;
+    border-radius: 8.5px;
+    margin: 20% auto;
+    padding: 35px;
+    width: 60%;
+    color: white;
+    -webkit-box-shadow: 20px 20px 45px #d9d9d9, -20px -20px 45px #ffffff;
+            box-shadow: 20px 20px 45px #d9d9d9, -20px -20px 45px #ffffff;
+  }
+  .containerCurrentTimesClicked-passed {
+    background: #eaeaea none repeat scroll 0% 0%;
+    border-radius: 8.5px;
+    margin: 20% auto;
+    padding: 35px;
+    width: 60%;
+    color: #aa75ff;
+    -webkit-box-shadow: 20px 20px 45px #d9d9d9, -20px -20px 45px #ffffff;
+            box-shadow: 20px 20px 45px #d9d9d9, -20px -20px 45px #ffffff;
+  }
+  .containerCurrentTimesClicked-normal {
+    background: #eaeaea;
+    border-radius: 8.5px;
+    margin: 20% auto;
+    padding: 35px;
+    width: 60%;
+    color: #aa75ff;
+    -webkit-box-shadow: 20px 20px 45px #d9d9d9, -20px -20px 45px #ffffff;
+            box-shadow: 20px 20px 45px #d9d9d9, -20px -20px 45px #ffffff;
+  }
+  .ClickedTimesList__ul-times-list {
+    width: 90%;
+    margin: 5% auto auto auto;
+    padding: 0;
+  }
+  .ClickedTimesList__ul-times-list .ClickedTimesList__ul-times-list__li-date {
+    font-weight: bold;
+    width: 100%;
+    list-style: none;
+    border-radius: 13px;
+    text-align: center;
+    margin-bottom: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    font-size: 13px;
+  }
+  .ClickedTimesList__ul-times-list .ClickedTimesList__ul-times-list__li-normal {
+    font-weight: bold;
+    width: 100%;
+    background-color: #eaeaea;
+    list-style: none;
+    height: 65px;
+    border-radius: 13px;
+    text-align: center;
+    margin-bottom: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    font-size: 13px;
+    -webkit-box-shadow: 20px 20px 45px #c7c7c7, -20px -20px 45px #ffffff;
+            box-shadow: 20px 20px 45px #c7c7c7, -20px -20px 45px #ffffff;
+  }
+  .ClickedTimesList__ul-times-list .ClickedTimesList__ul-times-list__li-passed {
+    font-weight: bold;
+    width: 100%;
+    background-color: #eaeaea;
+    list-style: none;
+    height: 65px;
+    border-radius: 13px;
+    text-align: center;
+    margin-bottom: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    font-size: 13px;
+    opacity: 0.5;
+    -webkit-box-shadow: 20px 20px 45px #c7c7c7, -20px -20px 45px #ffffff;
+            box-shadow: 20px 20px 45px #c7c7c7, -20px -20px 45px #ffffff;
+  }
+  .ClickedTimesList__ul-times-list .ClickedTimesList__ul-times-list__li-today {
+    font-weight: bold;
+    color: #eaeaea;
+    width: 100%;
+    list-style: none;
+    height: 65px;
+    border-radius: 13px;
+    text-align: center;
+    margin-bottom: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    font-size: 13px;
+    background: #aa75ff;
+    -webkit-box-shadow: -20px -20px 45px #9265db, 20px 20px 45px #c285ff;
+            box-shadow: -20px -20px 45px #9265db, 20px 20px 45px #c285ff;
+  }
+}
+/*# sourceMappingURL=Calendar.css.map */

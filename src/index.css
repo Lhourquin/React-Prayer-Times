@@ -1,0 +1,15 @@
+/*@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");*/
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@700&family=Overpass:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=PT+Sans&family=Rubik:wght@300&display=swap');
+body {
+  background: #f9f9f9;
+  background-attachment: fixed;
+  color: #eaeaea;
+ /* font-family: "Nunito", sans-serif;*/
+ font-family: 'Mulish', sans-serif;
+ font-family: 'Oswald', sans-serif;
+ font-family: 'PT Sans', sans-serif;
+ font-family: 'Rubik', sans-serif;
+
+  margin: 0;
+}

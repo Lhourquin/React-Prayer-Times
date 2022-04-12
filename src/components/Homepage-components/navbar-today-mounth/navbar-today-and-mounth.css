@@ -1,0 +1,104 @@
+.NavBarTodayAndMounth__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.NavBarTodayAndMounth__nav .NavBarTodayAndMounth__nav__ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0%;
+  font-size: 10px;
+  text-align: center;
+}
+
+.NavBarTodayAndMounth__nav .NavBarTodayAndMounth__nav__ul .NavBarTodayAndMounth__nav__ul__li__Link-today {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  color: #aa75ff;
+  font-weight: bold;
+}
+
+.NavBarTodayAndMounth__nav .NavBarTodayAndMounth__nav__ul .NavBarTodayAndMounth__nav__ul__li__Link-mounth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  color: #aa75ff;
+  font-weight: bold;
+}
+
+.NavBarTodayAndMounth__nav .NavBarTodayAndMounth__nav__ul .NavBarTodayAndMounth__nav__ul__li--today {
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  border-style: solid;
+  border-radius: 8px 0 0 8px;
+  padding: 3%;
+  background-color: #eaeaea;
+  border: none;
+  -webkit-box-shadow: 1px 2px 4px 0px #00000042;
+          box-shadow: 1px 2px 4px 0px #00000042;
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.NavBarTodayAndMounth__nav .NavBarTodayAndMounth__nav__ul .NavBarTodayAndMounth__nav__ul__li--month {
+  background-color: #eaeaea;
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  border-style: solid;
+  border-radius: 0 8px 8px 0;
+  padding: 3%;
+  border: none;
+  -webkit-box-shadow: 1px 2px 4px 0px #00000042;
+          box-shadow: 1px 2px 4px 0px #00000042;
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.NavBarTodayAndMounth__nav .NavBarTodayAndMounth__nav__ul .currentComponent {
+  -webkit-transition: 2s;
+  transition: 2s;
+  background-image: linear-gradient(135deg, #9147ff 0%, #9a57ff 21%, #9e61ff 30%, #a46bff 39%, #aa75ff 46%, #b080ff 54%, #b78aff 61%, #bc8fff 69%, #c299ff 79%, #c69eff 100%);
+}
+
+.NavBarTodayAndMounth__nav .NavBarTodayAndMounth__nav__ul .currentComponent a {
+  color: #eaeaea;
+}
+/*# sourceMappingURL=navbar-today-and-mounth.css.map */

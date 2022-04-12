@@ -1,0 +1,104 @@
+// Small devices (portrait phones, less than 768px)
+
+//
+.NavBarTodayAndMounth__nav {
+  display: flex;
+  justify-content: center;
+  
+  // opacity: 0.9;
+
+  .NavBarTodayAndMounth__nav__ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0%;
+    font-size: 10px;
+    text-align: center;
+    //text-decoration: none;
+
+    .NavBarTodayAndMounth__nav__ul__li__Link-today {
+      display: flex;
+      flex-direction: column;
+      text-decoration-line: none;
+      color: #aa75ff;
+      font-weight: bold;
+    }
+
+    .NavBarTodayAndMounth__nav__ul__li__Link-mounth {
+      display: flex;
+      flex-direction: column;
+      text-decoration-line: none;
+      color: #aa75ff;
+      font-weight: bold;
+    }
+
+    
+    
+
+    .NavBarTodayAndMounth__nav__ul__li--today {
+      border-top: 0;
+      border-bottom: 0;
+      border-left: 0;
+      border-right: 0;
+      border-style: solid;
+      border-radius: 8px 0 0 8px;
+      padding: 3%;
+      background-color: #eaeaea;
+      border: none;
+      box-shadow: 1px 2px 4px 0px #00000042;
+      transition: 2s;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+
+    }
+    .NavBarTodayAndMounth__nav__ul__li--month {
+      background-color: #eaeaea;
+      border-top: 0;
+      border-bottom: 0;
+      border-left: 0;
+      border-right: 0;
+      border-style: solid;
+      border-radius: 0 8px 8px 0;
+      padding: 3%;
+      border: none;
+      box-shadow: 1px 2px 4px 0px #00000042;
+      transition: 2s;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .currentComponent{
+      transition: 2s;
+      background-image: linear-gradient(
+        135deg,
+        #9147ff 0%,
+        #9a57ff 21%,
+        #9e61ff 30%,
+        #a46bff 39%,
+        #aa75ff 46%,
+        #b080ff 54%,
+        #b78aff 61%,
+        #bc8fff 69%,
+        #c299ff 79%,
+        #c69eff 100%
+      );
+      a{
+        color: #eaeaea;
+
+      }
+    }
+  }
+}
+
+//effect
+// Size can also be negative; see how it's smaller than the element

@@ -1,0 +1,8 @@
+
+.Today__div--container-list-pannel{
+    display: flex;
+    justify-content: space-evenly;
+    @media (max-width: 622px){
+        flex-direction: column-reverse;
+    }
+} 
