@@ -12,7 +12,7 @@ const NavBarTodayAndMounth = () => {
         <ul className="NavBarTodayAndMounth__nav__ul">
           <li
             className={
-              Location.pathname == "/"
+              Location.pathname == "/" || Location.pathname == "/index.html"
                 ? "NavBarTodayAndMounth__nav__ul__li--today currentComponent"
                 : "NavBarTodayAndMounth__nav__ul__li--today"
             }

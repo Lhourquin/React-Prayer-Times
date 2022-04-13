@@ -219,7 +219,7 @@ export const Today = ({
       {
         today.length === 0 ?
           <div 
-          className="instruction">Lancer une recherche en remplissant les barres de recherches ou en cliquant sur le button <i className="fas fa-map-marker-alt localisation-marker" aria-hidden="true"></i></div>
+          className="instruction">Entrez votre ville ou cliquer sur le button <i className="fas fa-map-marker-alt localisation-marker" aria-hidden="true"></i>.</div>
           :
           <>
             <div
