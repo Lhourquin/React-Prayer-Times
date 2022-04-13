@@ -216,44 +216,53 @@ export const Today = ({
 
   return (
     <>
-      <div
-        style={
-          isCalendar ? { display: "none" } : { opacity: "1" }
-        }
-        className="Today__div--container-list-pannel">
-        <TodayTimesList
-          buttonBurgerIsClicked={buttonBurgerIsClicked}
-          today={today}
-          now={now}
-          dateFajr={dateFajr}
-          dateShourouq={dateShourouq}
-          dateDhohr={dateDhohr}
-          dateAsr={dateAsr}
-          dateMaghreb={dateMaghreb}
-          dateIcha={dateIcha}
-          dateIchaLastDay={dateIchaLastDay}
-          dateMidnight={dateMidnight}
-          midnightTime={midnightTime}
-        />
-        <Pannel
-          today={today}
-          searchField={city !== "" ? inputCity : lastCity}
-          country={country}
-          getAngleOptionValue={getAngleOptionValue}
-          method={method}
-          selectedMethodStringValue={selectedMethodStringValue}
-          now={now}
-          dateFajr={dateFajr}
-          dateShourouq={dateShourouq}
-          dateDhohr={dateDhohr}
-          dateAsr={dateAsr}
-          dateIcha={dateIcha}
-          dateIchaLastDay={dateIchaLastDay}
-          dateMaghreb={dateMaghreb}
-          dateMidnight={dateMidnight}
-          midnightTime={midnightTime}
-        />
-      </div>
+      {
+        today.length === 0 ?
+          <div 
+          className="instruction">Lancer une recherche en remplissant les barres de recherches ou en cliquant sur le button <i className="fas fa-map-marker-alt localisation-marker" aria-hidden="true"></i></div>
+          :
+          <>
+            <div
+              style={
+                isCalendar ? { display: "none" } : { opacity: "1" }
+              }
+              className="Today__div--container-list-pannel">
+              <TodayTimesList
+                buttonBurgerIsClicked={buttonBurgerIsClicked}
+                today={today}
+                now={now}
+                dateFajr={dateFajr}
+                dateShourouq={dateShourouq}
+                dateDhohr={dateDhohr}
+                dateAsr={dateAsr}
+                dateMaghreb={dateMaghreb}
+                dateIcha={dateIcha}
+                dateIchaLastDay={dateIchaLastDay}
+                dateMidnight={dateMidnight}
+                midnightTime={midnightTime}
+              />
+              <Pannel
+                today={today}
+                searchField={city !== "" ? inputCity : lastCity}
+                country={country}
+                getAngleOptionValue={getAngleOptionValue}
+                method={method}
+                selectedMethodStringValue={selectedMethodStringValue}
+                now={now}
+                dateFajr={dateFajr}
+                dateShourouq={dateShourouq}
+                dateDhohr={dateDhohr}
+                dateAsr={dateAsr}
+                dateIcha={dateIcha}
+                dateIchaLastDay={dateIchaLastDay}
+                dateMaghreb={dateMaghreb}
+                dateMidnight={dateMidnight}
+                midnightTime={midnightTime}
+              />
+            </div>
+          </>
+      }
+
     </>
   );
 };

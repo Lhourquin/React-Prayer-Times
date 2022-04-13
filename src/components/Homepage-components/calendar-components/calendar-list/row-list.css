@@ -1,7 +1,8 @@
+table {
+  padding-top: 20px;
+}
+
 @media (min-width: 0px) and (max-width: 544px) {
-  table {
-    padding-top: 20px;
-  }
   .salat-of-month {
     font-weight: bold;
     display: -webkit-box;

@@ -114,18 +114,18 @@
     font: inherit;
     height: 25px;
     outline: inherit;
-    position: fixed;
-    right: 15%;
-    top: 13%;
+    position: relative;
+    left: 215px;
     width: 25px;
     font-size: 20px;
+    top: -20px;
   }
   .containerCurrentTimesClicked-today {
     background: #aa75ff;
     border-radius: 8.5px;
-    margin: 20% auto;
+    margin: 18% auto;
     padding: 35px;
-    width: 60%;
+    width: 220px;
     color: white;
     -webkit-box-shadow: 20px 20px 45px #d9d9d9, -20px -20px 45px #ffffff;
             box-shadow: 20px 20px 45px #d9d9d9, -20px -20px 45px #ffffff;
@@ -133,9 +133,9 @@
   .containerCurrentTimesClicked-passed {
     background: #eaeaea none repeat scroll 0% 0%;
     border-radius: 8.5px;
-    margin: 20% auto;
+    margin: 18% auto;
     padding: 35px;
-    width: 60%;
+    width: 220px;
     color: #aa75ff;
     -webkit-box-shadow: 20px 20px 45px #d9d9d9, -20px -20px 45px #ffffff;
             box-shadow: 20px 20px 45px #d9d9d9, -20px -20px 45px #ffffff;
@@ -143,9 +143,9 @@
   .containerCurrentTimesClicked-normal {
     background: #eaeaea;
     border-radius: 8.5px;
-    margin: 20% auto;
+    margin: 18% auto;
     padding: 35px;
-    width: 60%;
+    width: 220px;
     color: #aa75ff;
     -webkit-box-shadow: 20px 20px 45px #d9d9d9, -20px -20px 45px #ffffff;
             box-shadow: 20px 20px 45px #d9d9d9, -20px -20px 45px #ffffff;
@@ -192,8 +192,8 @@
     -ms-flex-pack: distribute;
         justify-content: space-around;
     font-size: 13px;
-    -webkit-box-shadow: 20px 20px 45px #c7c7c7, -20px -20px 45px #ffffff;
-            box-shadow: 20px 20px 45px #c7c7c7, -20px -20px 45px #ffffff;
+    -webkit-box-shadow: 20px 20px 45px #c7c7c7, -20px -20px 45px #ffffff;
+            box-shadow: 20px 20px 45px #c7c7c7, -20px -20px 45px #ffffff;
   }
   .ClickedTimesList__ul-times-list .ClickedTimesList__ul-times-list__li-passed {
     font-weight: bold;

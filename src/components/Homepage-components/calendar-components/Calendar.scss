@@ -26,8 +26,7 @@
   position: fixed;
   right: 0;
   left: 0;
-  p{
-
+  p {
     padding-top: 25px;
     padding-left: 7%;
   }
@@ -91,36 +90,36 @@
     font: inherit;
     height: 25px;
     outline: inherit;
-    position: fixed;
-    right: 15%;
-    top: 13%;
+    position: relative;
+    left: 215px;
     width: 25px;
     font-size: 20px;
+    top: -20px;
   }
   .containerCurrentTimesClicked-today {
     background: #aa75ff;
     border-radius: 8.5px;
-    margin: 20% auto;
+    margin: 18% auto;
     padding: 35px;
-    width: 60%;
+    width: 220px;
     color: white;
     box-shadow: 20px 20px 45px #d9d9d9, -20px -20px 45px #ffffff;
   }
   .containerCurrentTimesClicked-passed {
     background: #eaeaea none repeat scroll 0% 0%;
     border-radius: 8.5px;
-    margin: 20% auto;
+    margin: 18% auto;
     padding: 35px;
-    width: 60%;
-    color : #aa75ff;
+    width: 220px;
+    color: #aa75ff;
     box-shadow: 20px 20px 45px #d9d9d9, -20px -20px 45px #ffffff;
   }
   .containerCurrentTimesClicked-normal {
     background: #eaeaea;
     border-radius: 8.5px;
-    margin: 20% auto;
+    margin: 18% auto;
     padding: 35px;
-    width: 60%;
+    width: 220px;
     color: #aa75ff;
     box-shadow: 20px 20px 45px #d9d9d9, -20px -20px 45px #ffffff;
   }
@@ -143,7 +142,7 @@
     .ClickedTimesList__ul-times-list__li-normal {
       font-weight: bold;
       width: 100%;
-      background-color:#eaeaea ;
+      background-color: #eaeaea;
       list-style: none;
       height: 65px;
       border-radius: 13px;
@@ -153,8 +152,7 @@
       flex-direction: column;
       justify-content: space-around;
       font-size: 13px;
-      box-shadow:  20px 20px 45px #c7c7c7,
-             -20px -20px 45px #ffffff;
+      box-shadow: 20px 20px 45px #c7c7c7, -20px -20px 45px #ffffff;
     }
     .ClickedTimesList__ul-times-list__li-passed {
       font-weight: bold;

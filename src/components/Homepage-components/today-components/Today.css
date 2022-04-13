@@ -1,3 +1,11 @@
+.instruction {
+  color: #aa75ff;
+  font-size: 19px;
+  text-align: center;
+  margin: 60px auto auto auto;
+  width: 75%;
+}
+
 .Today__div--container-list-pannel {
   display: -webkit-box;
   display: -ms-flexbox;

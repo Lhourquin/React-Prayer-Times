@@ -20,14 +20,14 @@ export const NavBar = ({ buttonBurgerIsClicked, setButtonBurgerIsClicked }) => {
   useEffect(() => {
     let btnLocation = document.getElementsByClassName('button-location')[0];
     let btnInfos = document.getElementsByClassName("TodayTimesList__ul-times-list__li__span--information");
-    if (buttonBurgerIsClicked === true && btnInfos.length === 0 && isHomePageLocation === true || buttonBurgerIsClicked === true && btnInfos.length === 0 && Location.pathname === "/index.html") {
+    if (buttonBurgerIsClicked === true && btnInfos.length === 0 && isHomePageLocation === true || buttonBurgerIsClicked === true && btnInfos.length === 0 && Location.pathname === "/index.html" || buttonBurgerIsClicked === true && btnInfos.length === 0 && Location.pathname === "/calendar"  ) {
 
       btnLocation.style.opacity = "0";
       btnLocation.style.pointerEvents = "none";
 
 
 
-    } else if (btnInfos.length !== 0 && buttonBurgerIsClicked === true && isHomePageLocation === true || btnInfos.length !== 0 && buttonBurgerIsClicked === true && Location.pathname === "/index.html") {
+    } else if (btnInfos.length !== 0 && buttonBurgerIsClicked === true && isHomePageLocation === true || btnInfos.length !== 0 && buttonBurgerIsClicked === true && Location.pathname === "/index.html" || btnInfos.length !== 0 && buttonBurgerIsClicked === true &&  Location.pathname === "/calendar") {
       btnLocation.style.opacity = "0";
       btnLocation.style.pointerEvents = "none";
       btnInfos[0].style.pointerEvents = "none";
@@ -47,7 +47,7 @@ export const NavBar = ({ buttonBurgerIsClicked, setButtonBurgerIsClicked }) => {
       btnInfos[4].style.transition = "0.8s";
 
 
-    } else if (buttonBurgerIsClicked === false && isHomePageLocation === true || buttonBurgerIsClicked === false && Location.pathname === "/index.html") {
+    } else if (buttonBurgerIsClicked === false && isHomePageLocation === true || buttonBurgerIsClicked === false && Location.pathname === "/index.html" || buttonBurgerIsClicked === false && Location.pathname === "/calendar") {
 
       btnLocation.style.pointerEvents = "auto";
       btnLocation.style.opacity = "1";
@@ -88,7 +88,7 @@ export const NavBar = ({ buttonBurgerIsClicked, setButtonBurgerIsClicked }) => {
             <span className="line line3"></span>
           </div>
           <div className="logo">
-            <span>React Prayer Times</span>
+            <span>React Prayer Time</span>
           </div>
           <div className="menu-items">
             <li><Link
