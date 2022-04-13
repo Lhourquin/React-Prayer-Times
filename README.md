@@ -1,2 +1,2 @@
-# waqt-al-falaah
-![waqt al fallah](./wireframe/mobile.png)
+# React Prayer Times
+![React Prayer Times](./image-presentation/hmp-today.png)
