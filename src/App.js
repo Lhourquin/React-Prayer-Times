@@ -8,6 +8,10 @@ import { Calendar } from "./components/Homepage-components/calendar-components/C
 import { Today } from "./components/Homepage-components/today-components/Today";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
+import WorkerBuilder from './worker-builder.js';
+import Worker from './worker.js'
+
+const instance = new WorkerBuilder(Worker);
 
 const App = () => {
   const [isOnLine, setIsOnLine] = useState(navigator.onLine);
@@ -208,8 +212,7 @@ const App = () => {
 
   const [buttonBurgerIsClicked, setButtonBurgerIsClicked] = useState(false);
 
-  const [surat, setSurat] = useState([]);
-  const [quran, setQuran] = useState([]);
+
   const [suratName, setSuratName] = useState([
     ["Prologue (Al-Fatiha)."],
     ["La vache (Al-Baqarah)."],
@@ -327,21 +330,24 @@ const App = () => {
     ["Les hommes (An-Nas)."],
   ])
 
-  const getQuran = (number) => {
-    let arr = [];
-    for (let i = 1; i < number; i++) {
+  const [surat, setSurat] = useState([]);
+  const [quran, setQuran] = useState([]);
 
-      fetch(`https://quranenc.com/api/translation/sura/french_hameedullah/${i}`)
-        .then(response => response.json())
-        .then((result) => {
 
-          arr.push(result.result);
-          localStorage.setItem("Quran", JSON.stringify(arr))
-          setQuran(JSON.parse(localStorage.getItem("Quran")));
-
-        })
+  useEffect(() => {
+    if (!localStorage.getItem("Quran") || localStorage.getItem("Quran").length !== 114) {
+      instance.postMessage(115)
     }
-  }
+  }, [])
+
+  useEffect(() => {
+    instance.onmessage = (message) => {
+      if (message.data.length === 114 && !localStorage.getItem("Quran")) {
+        setQuran(message.data)
+      }
+    };
+
+  }, [])
 
   const [apiCall, setApiCall] = useState(false);
 
@@ -353,7 +359,6 @@ const App = () => {
 
     } else if (!localStorage.getItem("Quran") || localStorage.getItem("Quran").length !== 114) {
       setApiCall(true);
-      getQuran(115)
 
     }
   }, [])
@@ -402,8 +407,6 @@ const App = () => {
   }, [quran])
 
 
-
-
   return (
     <>
       <header>
@@ -413,6 +416,7 @@ const App = () => {
         />
 
       </header>
+      { /*  <button onClick={() => instance.postMessage(115)}>WEB WORKER</button>*/}
       <div style={{ textAlign: "center", color: "#bc4749" }}>
         {errorMessageLocation}
       </div>

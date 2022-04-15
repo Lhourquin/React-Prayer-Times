@@ -88,7 +88,7 @@ export const NavBar = ({ buttonBurgerIsClicked, setButtonBurgerIsClicked }) => {
             <span className="line line3"></span>
           </div>
           <div className="logo">
-            <span>React Prayer Time</span>
+            <span>React Prayer Times</span>
           </div>
           <div className="menu-items">
             <li><Link
