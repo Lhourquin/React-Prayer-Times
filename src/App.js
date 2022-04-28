@@ -417,9 +417,7 @@ const App = () => {
 
       </header>
       { /*  <button onClick={() => instance.postMessage(115)}>WEB WORKER</button>*/}
-      <div style={{ textAlign: "center", color: "#bc4749" }}>
-        {errorMessageLocation}
-      </div>
+
       <Routes>
 
         <Route
@@ -475,6 +473,9 @@ const App = () => {
                 }}
               />
               <NavBarTodayAndMounth />
+              <div style={{ textAlign: "center", color: "#bc4749" }}>
+                {errorMessageLocation}
+              </div>
               <Today
                 buttonBurgerIsClicked={buttonBurgerIsClicked}
                 city={city}
